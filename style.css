@@ -1,0 +1,172 @@
+*{
+	margin:0px;
+	padding:0px;
+	color:#202020;
+}
+body{
+	 background: linear-gradient(to right, grey 50%, white 50%);
+}
+img{
+	width:100%;	
+}
+
+.container{
+	padding:0px 30px;
+}
+
+nav{
+	display:flex;
+	padding-top:10px;
+	justify-content:space-around;
+	align-items:center;
+}
+
+.nav-logo{
+	display:flex;
+	align-items:center;
+}
+.nav-logo p{
+	padding:0px 8px;
+}
+
+nav p{
+	color:white;
+	letter-spacing:3px;
+}
+p span{
+	color:#fdc140;
+	font-weight:bold;
+}
+
+ul li{
+	list-style-type:none;
+	display:inline-block;
+}
+
+ul li a{
+	text-decoration:none;
+	padding: 0 20px;
+}
+
+header{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding: 50px;
+	line-height:35px;
+	letter-spacing:6px;
+}
+
+h1{
+	color:white;
+	margin-bottom:50px;
+}
+
+h1 span{
+	color:#fdc140;
+}
+
+.image-border{
+	border: 4px double blue;
+	min-height: 350px;
+	width:350px;
+}
+.hero-image{
+	width:26%;
+	position:fixed;
+	right:50px;
+	top:150px;
+}
+
+header a{
+	text-decoration:none;
+	letter-spacing:3px;
+	background-color:rgba(0,0,0,0.5);
+	color:white;
+	padding:10px;
+	border:2px solid #fdc140;
+	font-weight:800;
+}
+
+header a:hover{
+	background-color:white;
+	color:black;
+}
+
+@media all and (max-width:480px){
+	body{
+		background: linear-gradient(to top, white 50%, grey 50%);
+		color:black;
+		background-repeat:no-repeat;
+	}
+
+	header{
+		flex-direction:column;
+		padding-left:0px;
+	}
+	
+	header a{
+		background-color:white;
+		color:black;
+	}
+	.image-border{
+		height:300px;
+		width:300px;
+	}
+	.hero-image{
+		position:static;
+		width:100%;
+		margin-top:15px;
+		margin-left:20px;
+	}
+
+	ul li{
+		display:none;
+		
+	}
+	nav img{
+		width:80%;
+	}
+	aside{
+		margin-top:100px;
+	}
+
+}
+
+@media all and (max-width:790px) and (min-width:481px){
+
+	body{
+		background: linear-gradient(to top, white 50%, grey 50%);
+		color:black;
+		background-repeat:no-repeat;
+	}
+
+	header{
+		flex-direction:column;
+		padding-left:0px;
+	}
+	
+	header a{
+		background-color:white;
+		color:black;
+	}
+	.image-border{
+		min-height:350px;
+		width:350px;
+	}
+	.hero-image{
+		position:static;
+		width:100%;
+		margin-top:15px;
+		margin-left:28px;
+	}
+
+	ul li{
+		display:none;
+		
+	}
+	aside{
+		margin-top:200px;
+	}
+	
+}

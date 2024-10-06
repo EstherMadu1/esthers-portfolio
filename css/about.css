@@ -1,0 +1,378 @@
+@font-face {
+  font-family: customFont;
+  src: url("font/rubik-medium-webfont.woff") format("woff");
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+body {
+  background-color: black;
+  font-family: customFont, sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  z-index: 1;
+  border-right: 3px solid #030303;
+  position: fixed;
+  top: 0px;
+}
+
+.navbar-header {
+  width: 30%;
+  background-color: #b4abab;
+  padding: 1.8rem;
+  margin: 0px;
+  border-right: 3px solid #030303;
+}
+.navbar-menu {
+  width: 60%;
+  padding: 2rem;
+  background-color: #fefefe;
+  margin: 0px;
+}
+.navbar-menu ul {
+  display: flex;
+  justify-content: end;
+}
+.navbar-menu ul li {
+  padding: 0px 20px;
+  list-style-type: none;
+}
+.navbar-menu ul li a {
+  text-decoration: none;
+  color: #292626;
+}
+main {
+  border-left: 3px solid #030303;
+  border-right: 3px solid #030303;
+  margin: 3px 0px;
+}
+
+.title {
+  letter-spacing: 4px;
+}
+
+.hero {
+  display: flex;
+  margin-top: 88px;
+}
+.hero div,
+.hero aside {
+  width: 30%;
+}
+.prof-image {
+  flex-grow: 3;
+}
+
+.prof-image img {
+  display: block;
+}
+.about-text {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-left: 3px solid #030303;
+  border-right: 3px solid #030303;
+  margin: 0px;
+}
+
+.about-text p {
+  margin-top: 60px;
+  padding: 0px 17px;
+  line-height: 26px;
+}
+
+.subtext {
+  margin-top: 140px;
+}
+
+.subtext a {
+  text-decoration: none;
+  color: black;
+}
+.mantra-image {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.mantra-image p {
+  padding: 20px;
+}
+
+.mantra-image p,
+.subtitle {
+  line-height: 25px;
+  color: #272626;
+}
+
+.experience div {
+  width: 30%;
+}
+
+.experience {
+  display: flex;
+  margin-top: 3px;
+  height: 500px;
+}
+
+.skills {
+  background-color: #fff;
+  flex-grow: 2;
+  border-left: 3px solid #030303;
+  border-right: 3px solid #030303;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 30px;
+}
+
+.skills h3 {
+  margin: 20px 0;
+  letter-spacing: 6px;
+}
+.skills p {
+  line-height: 35px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.overlay a {
+  color: white;
+  text-decoration: none;
+}
+
+.github {
+  background-image: url(../images/design.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.music {
+  background-image: url(../images/microphone.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.git-text,
+.music-text {
+  color: white;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.white-arrow {
+  width: 12%;
+}
+.more {
+  display: flex;
+}
+.more div {
+  width: 30%;
+  height: 450px;
+  margin-top: 3px;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.education div {
+  width: 100%;
+  text-align: center;
+}
+
+.education {
+  flex-grow: 2;
+  background-color: #d8e3e8;
+  padding: 30px 0px;
+  color: #474141;
+}
+
+.education-entry h2 {
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.subtext {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.cartoon {
+  background-image: url("../images/cartoon.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  border-left: 3px solid #030303;
+}
+
+.cartoon div {
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.tasks {
+  background-color: #030303;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.tasks div {
+  height: 50px;
+}
+
+.space-skills div {
+  margin-bottom: 10px;
+}
+.skillset {
+  display: flex;
+}
+
+.skillset img {
+  width: 100%;
+  height: 20px;
+}
+.skillset a {
+  padding-left: 15px;
+}
+.task-text {
+  text-align: center;
+}
+.last-section {
+  background-color: #fff;
+  display: flex;
+  margin-top: 3px;
+}
+.last-section div {
+  width: 35%;
+  text-align: center;
+  padding: 25px 0px;
+}
+
+.last-section a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #2b2828;
+}
+.twitter {
+  border-left: 3px solid #030303;
+  border-right: 3px solid #030303;
+}
+footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 30px 0px;
+  font-size: 19px;
+}
+
+@media all and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    border: none;
+  }
+  .navbar-header {
+    background-color: #5e5b5b;
+    width: 100%;
+    border: none;
+    text-align: center;
+    border-bottom: 0.5px solid #030303;
+  }
+  .navbar-menu {
+    width: 100%;
+    margin: 0px;
+  }
+  .navbar-menu ul {
+    justify-content: center;
+  }
+  .about-text {
+    padding: 20px 0px;
+    border: none;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+  .mantra-image p {
+    padding: 40px;
+  }
+
+  .overlay {
+    text-align: center;
+  }
+
+  .hero {
+    margin-top: 173px;
+  }
+
+  .hero,
+  .experience,
+  .more,
+  .last-section {
+    flex-direction: column;
+  }
+  .hero div,
+  .hero aside,
+  .experience div,
+  .more div,
+  .last-section div {
+    width: 100%;
+  }
+  .github,
+  .music {
+    height: 800px;
+  }
+  .skills {
+    border: none;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 20px 0px;
+  }
+  .skillset {
+    justify-content: center;
+  }
+  .skillset img {
+    width: 40px;
+    height: 20px;
+  }
+  .twitter {
+    border: none;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+}
